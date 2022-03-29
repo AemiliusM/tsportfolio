@@ -1,0 +1,10 @@
+.slider-item {
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.slider-image {
+  width: 50px;
+  height: auto;
+  user-select: none;
+}
