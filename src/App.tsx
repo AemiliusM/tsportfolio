@@ -19,7 +19,10 @@ function App() {
           </div>
           <div className='background-shaper'></div>
           <div className='black-text-container'>
-            <h3 className='title-text'>BREWLETTE</h3>
+            <h3 className='title-text'>
+              BREWLETTE
+              <div className='circle-red-object'></div>
+            </h3>
             <div className='section-back-light'>{'   '}</div>
             <ul className='description-text-list'>
               {descriptionText1.split(' ').map((text) => {
@@ -57,7 +60,20 @@ function App() {
       </div>
       <div className='console-interface-box'>
         <div className='console-interface-key-pad'>
-          <div className='key-pad-box'></div>
+          <div className='key-pad-box'>
+            <div className='key-pad-button-vertical-red'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical-red'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical-red'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+          </div>
           <div className='key-pad-box-2'>
             <div className='key-pad-button'></div>
             <div className='key-pad-button'></div>
@@ -67,17 +83,7 @@ function App() {
             <div className='key-pad-button'></div>
             <div className='key-pad-button'></div>
             <div className='key-pad-button'></div>
-            <a
-              className='brewlette-git-hub'
-              href='https://github.com/BREWLETTE'
-            >
-              Code
-            </a>
             <div className='key-pad-button'></div>
-            <div className='key-pad-button'></div>
-            <a className='brewlette-site' href='https://www.brewlette.rocks/'>
-              Site
-            </a>
             <div className='key-pad-button'></div>
             <div className='key-pad-button'></div>
             <div className='key-pad-button'></div>
@@ -91,7 +97,17 @@ function App() {
             <div className='key-pad-button'></div>
             <div className='key-pad-button'></div>
           </div>
-          <div className='key-pad-box-3'></div>
+          <div className='key-pad-box-3'>
+            <a className='brewlette-site' href='https://www.brewlette.rocks/'>
+              Website
+            </a>
+            <a
+              className='brewlette-git-hub'
+              href='https://github.com/BREWLETTE'
+            >
+              Code
+            </a>
+          </div>
         </div>
         <div className='console-interface-divider-box-left'></div>
         <div className='console-interface-key-pad'></div>
