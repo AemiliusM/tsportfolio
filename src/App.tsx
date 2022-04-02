@@ -12,6 +12,7 @@ function App() {
   const descriptionText3 = 'Mobile Forward App';
   return (
     <div className='App'>
+      <div className='over-head-pannel'></div>
       <div className='console-box'>
         <div className='console-screen'>
           <div className='black-slider-container'>
@@ -56,7 +57,49 @@ function App() {
         <div className='console-divider-box-left'></div>
         <div className='console-screen'></div>
         <div className='console-divider-box-right'></div>
-        <div className='console-screen'></div>
+        <div className='console-screen'>
+          <div className='black-text-container'>
+            <h3 className='title-text'>
+              {/* need to add css to this */}
+              <div className='circle-blue-object'></div>
+              LIFE STATS
+            </h3>
+            <div className='section-back-light'>{'   '}</div>
+            <ul className='description-text-list'>
+              {descriptionText1.split(' ').map((text) => {
+                return (
+                  <li className='description-text' key={Math.random()}>
+                    {text}
+                  </li>
+                );
+              })}
+            </ul>
+            <ul className='description-text-list'>
+              {descriptionText2.split(' ').map((text1) => {
+                return (
+                  <li className='description-text' key={Math.random()}>
+                    {text1}
+                  </li>
+                );
+              })}
+            </ul>
+            <ul className='description-text-list'>
+              {descriptionText3.split(' ').map((text2) => {
+                return (
+                  <li className='description-text' key={Math.random()}>
+                    {text2}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          {/* need to add css to this */}
+          <div className='background-shaper-right'></div>
+          <div className='black-slider-container'>
+            <Slider items={brewletteItems} />
+          </div>
+        </div>
+        {/* <div className='console-screen'></div> */}
       </div>
       <div className='console-interface-box'>
         <div className='console-interface-key-pad'>
