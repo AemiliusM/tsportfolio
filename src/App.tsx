@@ -1,15 +1,16 @@
-import React from 'react';
 import './App.css';
-import { brewletteItems } from './imageSrc';
-// import { Project } from './Project/Project';
+import { brewletteItems, lifeStatsItems } from './imageSrc';
 import Slider from './Project/Slider';
+import {
+  descriptionText1,
+  descriptionText2,
+  descriptionText3,
+  descriptionText4,
+  descriptionText5,
+  descriptionText6,
+} from './Description/descriptions';
 
 function App() {
-  const descriptionText1 =
-    'Takes the hassle out of picking a place to go for drinks';
-  const descriptionText2 =
-    'Created using React.js for front-end and SQL and Node.js for the back-end';
-  const descriptionText3 = 'Mobile Forward App';
   return (
     <div className='App'>
       <div className='over-head-pannel'></div>
@@ -66,7 +67,7 @@ function App() {
             </h3>
             <div className='section-back-light'>{'   '}</div>
             <ul className='description-text-list'>
-              {descriptionText1.split(' ').map((text) => {
+              {descriptionText4.split(' ').map((text) => {
                 return (
                   <li className='description-text' key={Math.random()}>
                     {text}
@@ -75,7 +76,7 @@ function App() {
               })}
             </ul>
             <ul className='description-text-list'>
-              {descriptionText2.split(' ').map((text1) => {
+              {descriptionText5.split(' ').map((text1) => {
                 return (
                   <li className='description-text' key={Math.random()}>
                     {text1}
@@ -84,7 +85,7 @@ function App() {
               })}
             </ul>
             <ul className='description-text-list'>
-              {descriptionText3.split(' ').map((text2) => {
+              {descriptionText6.split(' ').map((text2) => {
                 return (
                   <li className='description-text' key={Math.random()}>
                     {text2}
@@ -93,13 +94,11 @@ function App() {
               })}
             </ul>
           </div>
-          {/* need to add css to this */}
           <div className='background-shaper-right'></div>
           <div className='black-slider-container'>
-            <Slider items={brewletteItems} />
+            <Slider items={lifeStatsItems} />
           </div>
         </div>
-        {/* <div className='console-screen'></div> */}
       </div>
       <div className='console-interface-box'>
         <div className='console-interface-key-pad'>
@@ -155,7 +154,59 @@ function App() {
         <div className='console-interface-divider-box-left'></div>
         <div className='console-interface-key-pad'></div>
         <div className='console-interface-divider-box-right'></div>
-        <div className='console-interface-key-pad'></div>
+        <div className='console-interface-key-pad'>
+          <div className='key-pad-box-3'>
+            <a
+              className='life-stats-site'
+              href='https://pedantic-pasteur-453987.netlify.app'
+            >
+              Website
+            </a>
+            <a
+              className='life-stats-git-hub'
+              href='https://github.com/Life-Stats/Life-stats'
+            >
+              Code
+            </a>
+          </div>
+          <div className='key-pad-box-2-right'>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+            <div className='key-pad-button'></div>
+          </div>
+          <div className='key-pad-box-right'>
+            <div className='key-pad-button-vertical-blue'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical-blue'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical-blue'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+            <div className='key-pad-button-vertical'></div>
+          </div>
+        </div>
       </div>
       <div className='back-wall'>
         <div className='bottom-detail-gap-box-left'></div>

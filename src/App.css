@@ -91,6 +91,17 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.key-pad-box-right {
+  display: flex;
+  height: 140px;
+  width: 100px;
+  background-color: black;
+  border-radius: 0% 10% 10% 0%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
 .key-pad-box-2 {
   display: flex;
   height: 100px;
@@ -98,6 +109,18 @@
   padding: 10px;
   background-color: black;
   border-radius: 0 10% 10% 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.key-pad-box-2-right {
+  display: flex;
+  height: 100px;
+  width: 300px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 10% 0 0 10%;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -115,15 +138,45 @@
   width: 30px;
   height: 15px;
 }
+.key-pad-button:hover {
+  background-color: rgb(250, 247, 160);
+  border-radius: 30%;
+  width: 30px;
+  height: 15px;
+  cursor: pointer;
+}
 .key-pad-button-vertical {
   background-color: rgb(228, 227, 188);
   width: 15px;
   height: 30px;
 }
+.key-pad-button-vertical:hover {
+  background-color: rgb(253, 249, 137);
+  width: 15px;
+  height: 30px;
+  cursor: pointer;
+}
 .key-pad-button-vertical-red {
   background-color: rgb(235, 85, 93);
   width: 15px;
   height: 30px;
+}
+.key-pad-button-vertical-red:hover {
+  background-color: rgb(238, 136, 141);
+  width: 15px;
+  height: 30px;
+  cursor: pointer;
+}
+.key-pad-button-vertical-blue {
+  background-color: rgb(76, 227, 247);
+  width: 15px;
+  height: 30px;
+}
+.key-pad-button-vertical-blue:hover {
+  background-color: rgb(165, 235, 245);
+  width: 15px;
+  height: 30px;
+  cursor: pointer;
 }
 .brewlette-site {
   display: flex;
@@ -138,6 +191,21 @@
   align-items: center;
   height: 15px;
   color: rgb(76, 227, 247);
+  text-decoration: none;
+}
+.life-stats-site {
+  display: flex;
+  align-items: center;
+  color: rgb(139, 235, 76);
+  height: 15px;
+  text-size-adjust: inherit;
+  text-decoration: none;
+}
+.life-stats-git-hub {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  color: rgb(235, 85, 93);
   text-decoration: none;
 }
 .key-pad-box-3 {
@@ -223,6 +291,12 @@
   height: 38px;
   border-radius: 0 50% 50% 0;
 }
+.circle-blue-object {
+  background-color: rgb(76, 227, 247);
+  width: 30px;
+  height: 38px;
+  border-radius: 50% 0% 0% 50%;
+}
 .background-shaper {
   display: flex;
   width: 150px;
@@ -231,6 +305,15 @@
   background-color: black;
   color: rgb(228, 227, 188);
   border-radius: 9% 0% 0% 9%;
+}
+.background-shaper-right {
+  display: flex;
+  width: 150px;
+  padding: 10;
+  height: 200px;
+  background-color: black;
+  color: rgb(228, 227, 188);
+  border-radius: 0% 9% 9% 0%;
 }
 .section-back-light {
   width: fit-content;
